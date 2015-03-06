@@ -1,0 +1,33 @@
+.bie-container {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.bie-container .bie-image-container {
+    overflow: hidden;
+    position: relative;
+
+}
+.bie-container .bie-image-container img {
+    display: block;
+    position: relative;
+}
+
+body.bie-is-touch .bie-container .bie-image-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
+body.bie-is-touch .bie-container .bie-image-container img {
+    display: inline;
+}
+
+.bie-container .bie-zoom-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
